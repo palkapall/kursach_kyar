@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css/error.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon--page.svg">
+    <title>Positivus</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="wrapper">
+        <div class="logo"> <img src="img/Positivus.svg" alt="positivus"></div>
+        <div class="burger" id="burger-menu">
+          <img src="img/burger.svg" alt="Бургерное меню">
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="index.html#about" class="menu__link">About us</a></li>
+          <li><a href="index.html#service" class="menu__link">Services</a></li>
+          <li><a href="index.html#cases" class="menu__link">Use Cases</a></li>
+          <li><a href="#pricing" class="menu__link">Pricing</a></li>
+          <li><a href="#blog" class="menu__link">Blog</a></li>
+        </ul>
+        <button class="button button--uniq" onclick="redirectToPage()">Request a quote</button>
+      </div>
+  </div>
+  </header>
+
+      <main>
+        <div class="container error">
+            <div>
+                <h1>404</h1>
+                <p>Page Not Found</p>
+                <button class="button button--home" onclick="redirectToPage2()">Go to home</button>
+            </div>
+            <img src="img/404.svg" alt="404_img">
+        </div>
+      </main>
+
+      <footer>
+        <div class="container footer">
+          <div class="footer__header">
+            <img src="img/Logo--white.svg" alt="Logo--white" style="max-height: 29px;">
+            <ul class="menu menu--footer" id="menu">
+              <li><a href="index.htm#about" class="menu__link menu__link--footer">About us</a></li>
+              <li><a href="index.htm#services" class="menu__link menu__link--footer">Services</a></li>
+              <li><a href="index.htm#cases" class="menu__link menu__link--footer">Use Cases</a></li>
+              <li><a href="error.html" class="menu__link menu__link--footer">Pricing</a></li>
+              <li><a href="error.html" class="menu__link menu__link--footer">Blog</a></li>
+            </ul>
+            <div class="social">
+              <div class="socia__logo"><a href="error.html"><img src="img/Social_icon.svg" alt="socia__logo"></a></div>
+              <div class="socia__logo"><a href="error.html"><img src="img/Social_icon2.svg" alt="socia__logo"></a></div>
+              <div class="socia__logo"><a href="error.html"><img src="img/Social_icon3.svg" alt="socia__logo"></a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="Privacy">
+            <p>© 2023 Positivus. All Rights Reserved.</p>
+            <a href="error.html">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
+
+      <script src="js/index.js"></script>
+</body>
+</html>

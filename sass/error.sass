@@ -1,0 +1,332 @@
+@font-face 
+    font-family: "Space"
+    src: url(../../style/font/SpaceGrotesk-VariableFont_wght.ttf)
+
+html, body 
+    overflow-x: hidden !important
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Space
+
+a 
+    text-decoration: none
+
+body 
+    background: #fff
+
+
+.container 
+    max-width: 1240px
+    margin: 0 auto
+
+
+.header 
+    padding-top: 38px
+    padding-bottom: 70px
+
+.burger 
+    display: none
+
+.wrapper 
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.logo 
+    display: flex
+    align-items: center
+    margin-right: 205px
+
+.menu
+    display: flex
+    list-style-type: none
+    font-family: Space
+    font-size: 20px
+    letter-spacing: 0%
+
+.menu__link 
+    text-decoration: none
+    color: #000
+    margin-right: 40px
+
+.menu__link:hover, .menu__link:active, .menu__link:focus   
+    text-decoration: underline
+
+.button 
+    background: none
+    border-radius: 14px
+
+.button--uniq 
+    color: #000
+    border: 1px solid #191A23
+    padding: 20px 35px
+    font-family: Space
+    font-size: 20px
+    transition: 0.15s
+
+.button--uniq:hover 
+    color: #000
+    border: none
+    background-color: #B9FF66
+    border: 1px solid #B9FF66
+
+main
+    margin-top: 30px
+    margin-bottom: 65px
+
+.flex 
+    display: flex
+    justify-content: space-between
+
+.footer 
+    background-color: #191A23
+    padding: 55px 60px 5px 60px
+    border-radius: 45px 45px 0 0
+
+.footer__header 
+    display: flex
+    gap: 155px
+    margin-bottom: 60px
+
+.footer__form 
+    background-color: #292A32
+    border-radius: 14px
+    display: flex
+    align-items: center
+    padding: 58px 40px
+
+.footer__form input
+    background-color: #292A32
+    border: 1px solid #fff
+    border-radius: 14px
+    padding: 22px 35px
+    width: 285px
+
+.footer__form input:placeholder 
+    color: #FFF
+
+.footer__main 
+    display: flex
+    gap: 155px
+    margin-bottom: 50px
+  
+.menu--footer 
+    margin-left: 5px
+    gap: 40px
+  
+.menu__link--footer 
+    white-space: nowrap
+    font-size: 18px
+    color: #fff
+    margin: 0
+    text-decoration: underline
+
+.menu__link--footer:hover 
+    text-decoration: none
+  
+.social 
+    display: flex
+    gap: 20px
+  
+.button--Subscribe 
+    padding: 20px 35px
+    border: 1px solid #292A32
+    background-color: #B9FF66
+    font-family: Space
+    font-size: 20px
+    color: #000
+    width: 260px
+    margin-left: 10px
+    transition: 0.15s
+  
+.button--home
+    padding: 7px 38px
+    font-size: 48px
+    background-color: #292A32
+    color: #fff
+    border: none
+
+.button--Subscribe:hover, .button--Subscribe:active, .button--Subscribe:focus 
+    color: #B9FF66
+    border: 1px solid #B9FF66
+    background-color: #292A32
+
+.button--home:hover, .button--home:active, .button--home:focus
+    background-color: #B9FF66
+    color: #292A32
+
+.Privacy 
+    margin-top: 35px
+    display: flex
+    color: #fff
+    margin-bottom: 50px
+    font-size: 18px
+    gap: 40px
+
+.Privacy a
+    text-decoration: underline
+
+.error
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 80px
+
+.error h1
+    font-size: 96px
+    margin-bottom: 27px
+
+.error p
+    font-size: 64px
+    margin-bottom: 34px
+
+.error div
+    margin-right: -12px
+
+.error img
+    margin-top: -29px
+
+@media (max-width:1200px)
+    .container
+      max-width: 1100px
+  
+    .logo 
+      margin-right: 140px 
+    
+    .header 
+      padding-top: 40px
+      padding-bottom: 50px
+  
+    .footer__header
+      display: flex
+      gap: 100px
+      margin-bottom: 60px
+
+    .footer__main 
+      gap: 70px
+    
+
+@media (max-width:1024px) 
+    .container 
+      max-width: 960px
+    
+    .logo 
+      margin-right: 80px 
+
+    .menu
+      gap: 20px 
+  
+    .menu__link
+      font-size: 18px
+  
+    .header
+      padding-top: 40px
+      padding-bottom: 50px 
+  
+    .footer__header
+      padding-top: 55px
+      gap: 10px
+      justify-content: space-between
+
+    .footer__main 
+      flex-wrap: wrap
+      gap: 40px
+      justify-content: center
+
+@media (max-width: 992px)
+    .container
+      max-width: 920px 
+
+    .menu 
+      display: none !important
+
+
+    .burger 
+      display: block
+      cursor: pointer
+      z-index: 1001
+
+
+    .menu.menu--active 
+      display: block !important
+      position: absolute
+      top: 90px
+      right: 250px
+      width: 240px
+      background: #fff
+      padding: 12px 14px
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12)
+      border-radius: 10px
+      list-style: none
+  
+    .menu.menu--active li
+      margin: 10px 0
+    
+    .footer__header
+      gap: 60px
+  
+    .footer__main 
+      gap: 60px
+
+
+@media screen and (max-width: 768px)
+    .container 
+      max-width: 720px
+    
+    .menu 
+      display: none 
+    
+    .burger 
+      display: block
+    
+
+    .error img
+      display: none
+    
+
+    .footer__header 
+      flex-direction: column 
+      gap: 18px
+      align-items: flex-start
+    
+  
+    .footer__main 
+      flex-direction: column
+      gap: 20px
+
+@media screen and (max-width: 576px) 
+    html, body 
+      font-size: 14px
+
+    .logo
+      margin-right: 30px
+  
+    .container 
+      max-width: 100%
+  
+    .header
+      padding-top: 20px
+      padding-bottom: 20px
+
+    .menu 
+      display: none !important
+    
+    .burger 
+      display: block
+
+    .error img
+      display: none
+
+
+    .footer
+      margin: 0 5%
+      border-radius: 12px 12px 0 0
+
+  
+    .contact, .footer__header
+      display: flex
+      flex-direction: column
+      align-items: center
